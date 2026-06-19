@@ -1,0 +1,51 @@
+{
+	"namespace": "command_block",
+	"command_block_screen_content/background_divider/dialog_divider": {
+		"ignored": true
+	},
+	"plus_button": {
+		"$default_content_color": "$primary",
+    "$hover_content_color": "$onsecondary",
+    "$pressed_content_color": "$onsecondary",
+    "$locked_content_color": "$error",
+    "$default_button_texture": "textures/Quasar/direction/left",
+    "$hover_button_texture": "textures/Quasar/direction/left",
+    "$pressed_button_texture": "textures/Quasar/direction/left",
+    "$locked_button_texture": "textures/Quasar/direction/left"
+	},
+	"cancel_button": {
+		"$default_content_color": "$primary",
+    "$hover_content_color": "$onsecondary",
+    "$pressed_content_color": "$onsecondary",
+    "$locked_content_color": "$error",
+    "$default_button_texture": "$16x",
+    "$hover_button_texture": "$16x",
+    "$pressed_button_texture": "$16x",
+    "$locked_button_texture": "$16x"
+	},
+	"paste_button": {
+		"$default_content_color": "$primary",
+    "$hover_content_color": "$onsecondary",
+    "$pressed_content_color": "$onsecondary",
+    "$locked_content_color": "$error",
+    "$default_button_texture": "textures/Quasar/direction/right",
+    "$hover_button_texture": "textures/Quasar/direction/right",
+    "$pressed_button_texture": "textures/Quasar/direction/right",
+    "$locked_button_texture": "textures/Quasar/direction/right"
+	},
+	"plus_icon": {
+    "type": "image",
+    "layer": 2,
+    "texture": "textures/Quasar/container/plus",
+    "color": "$primary",
+    "size": [ 11, 11 ]
+  },
+
+  "paste_icon": {
+    "type": "image",
+    "layer": 2,
+    "texture": "textures/Quasar/container/cartography/paste",
+    "color": "$primary",
+    "size": [ 12, 12 ]
+  }
+}

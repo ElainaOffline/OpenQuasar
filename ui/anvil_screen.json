@@ -1,0 +1,300 @@
+{
+  "namepsace": "anvil",
+  "anvil_icon": {
+    "texture": "textures/Quasar/container/hammer",
+    "color": "$primarycontainer"
+  },
+  "toggle@Quasar_toggle.toggle": {
+    "size": [
+      "20%",
+      20
+    ],
+    "$button_icon": "textures/Quasar/chat/newline",
+    "$toggle_name": "toggle",
+    "$toggle_view_binding_name": "anvil.toggle",
+    "$toggle_check_anim": "@pause.toggle_check",
+    "$toggle_uncheck_anim": "@pause.toggle_uncheck",
+    "$custom_controls": "pause.icon_controls",
+    "$unchecked_controls": "Quasar_toggle.normal_toggle_uncheck",
+    "$checked_controls": "Quasar_toggle.normal_toggle_check"
+  },
+  "text_edit_control_newline@anvil.text_edit_control": {
+    "enabled_newline": true,
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "anvil.toggle",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+        //"target_property_name": "#EnabledNewline"
+        //"target_property_name": "#enabled_newline"
+        //"target_property_name": "#enablednewline"
+      }
+    ]
+  },
+  "text_edit_control": {
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "anvil.toggle",
+        "source_property_name": "(not #toggle_state)",
+        "target_property_name": "#visible"
+        //"target_property_name": "#EnabledNewline"
+        //"target_property_name": "#enabled_newline"
+        //"target_property_name": "#enablednewline"
+      }
+    ]
+  },
+  "plus_sign_icon": {
+    "texture": "textures/Quasar/container/plus",
+    "color": "$primary"
+  },
+  "arrow_icon": {
+    "texture": "textures/Quasar/container/arrow",
+    "color": "$primary"
+  },
+  "cross_out_icon": {
+    "texture": "textures/Quasar/container/error",
+    "color": "$error"
+  },
+  "text_edit_panel": {
+    "type": "label",
+    "anchor_from": "bottom_left",
+    "anchor_to": "bottom_left",
+    "size": [
+      "100%",
+      "70%"
+    ],
+    "offset": [
+      0,
+      2
+    ],
+    "color": "$onprimarycontainer",
+    "font_type": "$global_font_type",
+    "text": "Quasar UI",
+    "controls": []
+  },
+  "anvil_item_slot": {
+    "type": "image",
+    "texture": "$16x",
+    "alpha": 0.12,
+    "color": "$primary",
+    "size": [
+      18,
+      18
+    ],
+    "controls": [
+      {
+        "container_item@common.container_item": {
+          "anchor_to": "center",
+          "anchor_from": "center"
+        }
+      }
+    ]
+  },
+  "anvil_panel": {
+    "type": "panel",
+    "controls": [
+      {
+        "container_gamepad_helpers@common.container_gamepad_helpers": {}
+      },
+      {
+        "selected_item_details_factory@common.selected_item_details_factory": {}
+      },
+      {
+        "item_lock_notification_factory@common.item_lock_notification_factory": {}
+      },
+      {
+        "toggle@anvil.toggle": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left"
+        }
+      },
+      {
+        "root_panel@common.root_panel": {
+          "layer": 1,
+          "controls": [
+            {
+              "common_panel@common.common_panel": {
+                "$container_size": [
+                  176,
+                  166
+                ],
+                "animation_reset_name": "screen_animation_reset",
+                "anims": [
+                  "@common.container_entrance_size_pop",
+                  "@common.container_entrance_size_push",
+                  "@common.container_exit_size_pop",
+                  "@common.container_exit_size_push"
+                ]
+              }
+            },
+            {
+              "anvil_screen_inventory": {
+                "type": "panel",
+                "layer": 2,
+                "$container_size": [
+                  176,
+                  166
+                ],
+                "animation_reset_name": "screen_animation_reset",
+                "anims": [
+                  "@common.container_entrance_size_pop",
+                  "@common.container_entrance_size_push",
+                  "@common.container_exit_size_pop",
+                  "@common.container_exit_size_push"
+                ],
+                "clips_children": true,
+                "controls": [
+                  {
+                    "top_half_panel@anvil.top_half_panel": {}
+                  },
+                  {
+                    "inventory_panel_bottom_half_with_label@common.inventory_panel_bottom_half_with_label": {}
+                  },
+                  {
+                    "hotbar_grid@common.hotbar_grid_template_modified": {}
+                  },
+                  {
+                    "inventory_tae_progress_icon_button@common.inventory_take_progress_icon_button": {}
+                  }
+                ]
+              }
+            },
+            {
+              "inventory_selected_icon_button@common.inventory_selected_icon_button": {}
+            },
+            {
+              "gamepad_cursor@common.gamepad_cursor_button": {}
+            }
+          ]
+        }
+      },
+      {
+        "text_bar_panel": {
+          "type": "panel",
+          "size": [
+            "20%",
+            "100%-25px"
+          ],
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left",
+          "controls": [
+            {
+              "text_edit_box@anvil.text_edit_control": {
+                "size": [
+                  "100%",
+                  "100%"
+                ]
+              }
+            },
+            {
+              "text_edit_box_newline@anvil.text_edit_control_newline": {
+                "size": [
+                  "100%",
+                  "100%"
+                ]
+              }
+            }
+          ],
+          "anims": [
+            "@anvil.text_bar_entrance_offset_pop",
+            "@anvil.text_bar_entrance_offset_push",
+            "@anvil.text_bar_exit_offset_push",
+            "@anvil.text_bar_exit_offset_pop",
+            "@common.screen_exit_animation_push_fade",
+            "@common.screen_exit_animation_pop_fade",
+            "@common.screen_entrance_animation_push_fade",
+            "@common.screen_entrance_animation_pop_fade"
+          ],
+          "propagate_alpha": true,
+          "animation_reset_name": "screen_animation_reset"
+        }
+      },
+      {
+        "flying_item_renderer@common.flying_item_renderer": {
+          "layer": 12
+        }
+      }
+    ]
+  },
+  "anvil_screen@common.inventory_screen_common": {
+    "$close_on_player_hurt|default": true,
+    "close_on_player_hurt": "$close_on_player_hurt",
+    "variables": [
+      {
+        "requires": "$desktop_screen",
+        "$screen_content": "anvil.anvil_panel",
+        "$screen_bg_content": "common.screen_background",
+        "$screen_background_alpha": 0.4
+      },
+      {
+        "requires": "$pocket_screen",
+        "$screen_content": "anvil_pocket.anvil_panel",
+        "$screen_bg_content": "common.screen_background",
+        "$screen_background_alpha": 0.4
+      }
+    ],
+    "$screen_animations": []
+  },
+  "text_bar_entrance_offset_pop": {
+    "anim_type": "offset",
+    "duration": 0.4,
+    "from": [
+      0,
+      "-50%"
+    ],
+    "to": [
+      0,
+      0
+    ],
+    "easing": "out_cubic",
+    "play_event": "screen.entrance_pop",
+    "end_event": "screen.entrance_end"
+  },
+  "text_bar_entrance_offset_push": {
+    "anim_type": "offset",
+    "duration": 0.4,
+    "from": [
+      0,
+      "-50%"
+    ],
+    "to": [
+      0,
+      0
+    ],
+    "easing": "out_cubic",
+    "play_event": "screen.entrance_push",
+    "end_event": "screen.entrance_end"
+  },
+  "text_bar_exit_offset_push": {
+    "anim_type": "offset",
+    "duration": 0.4,
+    "easing": "out_cubic",
+    "to": [
+      "-50%",
+      0
+    ],
+    "from": [
+      0,
+      0
+    ],
+    "play_event": "screen.exit_push",
+    "end_event": "screen.exit_end"
+  },
+  "text_bar_exit_offset_pop": {
+    "anim_type": "offset",
+    "duration": 0.4,
+    "easing": "out_cubic",
+    "to": [
+      "-50%",
+      0
+    ],
+    "from": [
+      0,
+      0
+    ],
+    "play_event": "screen.exit_pop",
+    "end_event": "screen.exit_end"
+  }
+}

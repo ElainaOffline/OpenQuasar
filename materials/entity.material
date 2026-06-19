@@ -1,0 +1,11 @@
+{
+	"materials": {
+		"version": "1.0.0",
+		"armor_:armor": {
+			"+defines": [
+				"USE_OVERLAY",
+				"USE_COLOR_MASK"
+			]
+		}
+	}
+}

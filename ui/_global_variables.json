@@ -1,0 +1,88 @@
+{
+"$is_netease": false,
+"$debug": false,
+
+    "$fancy_coordinate": true,
+    "$inventory_hud": true,
+    "$sidebar_score": false,
+
+    "$global_alpha": 0.85,
+    "$global_bloom_alpha": 0.4,
+    "$global_font_type": "OldSmoothFont",
+    
+    "$40x": "textures/Quasar/basic/40",
+    "$16x": "textures/Quasar/basic/cube",
+    "$8x": "textures/Quasar/basic/circle",
+    "$4x": "textures/Quasar/basic/white",
+    "$fk": "textures/Quasar/basic/square",
+    "$bloom": "textures/Quasar/basic/bloom",
+    "$border": "textures/Quasar/smooth_border/border",
+    "$l2r": "textures/Quasar/gradient/l2r",
+    "$r2l": "textures/Quasar/gradient/r2l",
+    "$u2d": "textures/Quasar/gradient/u2d",
+    "$d2u": "textures/Quasar/gradient/d2u",
+    
+//Blue - Default - Dark
+    "$primary": [0.753, 0.757, 1],//"#C0C1FF"
+    "$onprimary": [0.157, 0.165, 0.376],//"#282A60"
+    "$primarycontainer": [0.247, 0.255, 0.471],//"#3F4178"
+    "$onprimarycontainer": [0.882, 0.878, 1],//"#E1E0FF"
+    "$secondary": [0.773, 0.769, 0.867],//"#C5C4DD"
+    "$onsecondary": [0.18, 0.184, 0.259],//"#2E2F42"
+    "$secondarycontainer": [0.271, 0.271, 0.349],//"#454559"
+    "$onsecondarycontainer": [0.886, 0.878, 0.976],//"#E2E0F9"
+    "$tertiary": [0.91, 0.725, 0.831],//"#E8B9D4"
+    "$ontertiary": [0.275, 0.149, 0.231],//"#46263B"
+    "$tertiarycontainer": [0.373, 0.235, 0.322],//#5F3C52"
+    "$onteriarycontainer": [1, 0.847, 0.929],//"#FFD8ED"
+    "$error": [1, 0.706, 0.671],//"#FFB4AB"
+    
+    "$surfacecontainerlowest": [0.055, 0.055, 0.075],//#0E0E13
+    "$surfacecontainerlow": [0.106, 0.106, 0.129],//#1B1B21
+    "$surfacecontainer": [0.122, 0.122, 0.145],//#1F1F25
+    "$surfacecontainerhigh": [0.165, 0.161, 0.184],//#2A292F
+    "$surfacecontainerhighest": [0.208, 0.204, 0.227],//#35343A
+    
+    "$background": [0.075, 0.075, 0.094],//#131318
+    "$onbackground": [0.894, 0.882, 0.914],//#E4E1E9
+    
+    "$surface": [0.075, 0.075, 0.094],//#131318
+    "$onsurface": [0.894, 0.882, 0.914],//#E4E1E9
+    
+    "$outline": [0.569, 0.561, 0.604],//#918F9A
+    "$shadow": "black",
+//Vega UI Next
+    /*"$primary": [1, 0.702, 0.71],
+    "$onprimary": [0.337, 0.114, 0.137],
+    "$primarycontainer": [0.447, 0.2, 0.22],
+    "$onprimarycontainer": [1, 0.855, 0.855],
+    "$secondary": [0.902, 0.741, 0.741],
+    "$onsecondary": [0.267, 0.161, 0.165],
+    "$secondarycontainer": [0.365, 0.247, 0.251],
+    "$onsecondarycontainer": [1, 0.855, 0.855],
+    "$tertiary": [0.902, 0.753, 0.553],
+    "$ontertiary": [0.263, 0.173, 0.024],
+    "$tertiarycontainer": [0.361, 0.259, 0.102],
+    "$onteriarycontainer": [1, 0.867, 0.698],
+    "$error": [1, 0.706, 0.671],
+    
+    "$surfacecontainerlowest": [0.078, 0.047, 0.047],
+    "$surfacecontainerlow": [0.133, 0.098, 0.098],
+    "$surfacecontainer": [0.153, 0.114, 0.114],
+    "$surfacecontainerhigh": [0.196, 0.157, 0.157],
+    "$surfacecontainerhighest": [0.239, 0.196, 0.196],
+    
+    "$surface": [0.102, 0.067, 0.067],
+    "$onsurface": [0.941, 0.871, 0.871],
+    
+    "$background": [0.102, 0.067, 0.067],
+    "$onbackground": [0.941, 0.871, 0.871],
+    
+    "$outline": [0.624, 0.549, 0.549],
+    "$shadow": "black",*/
+
+    
+    "$title_text_color": [0.882, 0.878, 1],//PS:这个值来自$onprimarycontainer这个变量，所以当你更改配色方案时，这个值也要对应修改
+    "$place_holder_text": "Quasar UI",
+    "$client_id": "Quasar UI"//左上角坐标显示的文件
+}

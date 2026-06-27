@@ -149,8 +149,8 @@
       },
       {
         "scoreboard_toggle@Quasar/Panel/Menu_trigger.function_toggle": {
-          "$title_text": "Scoreboard",
-          "$describe_text": "Vanilla Scoreboard",
+          "$title_text": "计分板",
+          "$describe_text": "计分板显示控制",
           "$function_icon": "textures/Quasar/Panel/scoreboard",
           "$toggle_view_binding_name": "scoreboard_panel_toggle",
           "$toggle_name": "scoreboard_panel_toggle",
@@ -165,8 +165,8 @@
       },
       {
         "exp_toggle@Quasar/Panel/Menu_trigger.function_toggle": {
-          "$title_text": "Experience bar",
-          "$describe_text": "Vanilla Experience bar ",
+          "$title_text": "经验条",
+          "$describe_text": "经验条显示控制",
           "$function_icon": "textures/Quasar/Panel/exp",
           "$toggle_view_binding_name": "exp_panel_toggle",
           "$toggle_name": "exp_panel_toggle",
@@ -181,8 +181,8 @@
       },
       {
         "inv_toggle@Quasar/Panel/Menu_trigger.function_toggle": {
-          "$title_text": "InventoryHUD",
-          "$describe_text": "What's in your inventory",
+          "$title_text": "背包物品显示",
+          "$describe_text": "背包内物品显示",
           "$function_icon": "textures/Quasar/container/inventory",
           "$toggle_view_binding_name": "inv_panel_toggle",
           "$toggle_name": "inv_panel_toggle"
@@ -196,8 +196,8 @@
       },
       {
         "durability_toggle@Quasar/Panel/Menu_trigger.function_toggle": {
-          "$title_text": "DurabilityHUD",
-          "$describe_text": "How many Durability your tool left",
+          "$title_text": "耐久显示",
+          "$describe_text": "手持物品剩余耐久百分比显示",
           "$function_icon": "textures/Quasar/Panel/durability",
           "$toggle_view_binding_name": "durability_panel_toggle",
           "$toggle_name": "durability_panel_toggle"
@@ -211,8 +211,8 @@
       },
       {
         "paperdoll_toggle@Quasar/Panel/Menu_trigger.function_toggle": {
-          "$title_text": "Paperdoll",
-          "$describe_text": "How you look like",
+          "$title_text": "纸娃娃",
+          "$describe_text": "在屏幕上显示你的玩家模型",
           "$function_icon": "textures/Quasar/Panel/paperdoll",
           "$toggle_view_binding_name": "paperdoll_panel_toggle",
           "$toggle_name": "paperdoll_panel_toggle"
@@ -226,8 +226,8 @@
       },
       {
         "armorhud@Quasar/Panel/Menu_trigger.function_toggle": {
-          "$title_text": "ArmorHUD",
-          "$describe_text": "What you are wearing",
+          "$title_text": "盔甲显示",
+          "$describe_text": "显示你所穿戴的装备（只支持原版装备）",
           "$function_icon": "textures/Quasar/Panel/armorhud",
           "$toggle_view_binding_name": "armorhud_panel_toggle",
           "$toggle_name": "armorhud_panel_toggle"
@@ -241,8 +241,8 @@
       },
       {
         "keystroke@Quasar/Panel/Menu_trigger.function_toggle": {
-          "$title_text": "Keystroke",
-          "$describe_text": "Where you want to go",
+          "$title_text": "按键显示",
+          "$describe_text": "显示你的游戏操作",
           "$function_icon": "textures/Quasar/Panel/keystroke",
           "$toggle_view_binding_name": "keystroke_panel_toggle",
           "$toggle_name": "keystroke_panel_toggle"
